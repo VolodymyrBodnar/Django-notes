@@ -16,16 +16,16 @@ pip install psycopg2
 В вашому Django проекті відредагуйте файл `settings.py` [[Модуль Налаштувань Django]], щоб налаштувати підключення до PostgreSQL.
 
 ```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'назва_бази_даних',
-        'USER': 'користувач',
-        'PASSWORD': 'пароль',
-        'HOST': 'localhost',  # Адреса сервера PostgreSQL (зазвичай localhost)
-        'PORT': '',           # Порт для підключення (зазвичай залишається порожнім)
-    }
-}
+	DATABASES = {
+	    'default': {
+	        'ENGINE': 'django.db.backends.postgresql',
+	        'NAME': 'назва_бази_даних',
+	        'USER': 'користувач',
+	        'PASSWORD': 'пароль',
+	        'HOST': 'localhost',  # Адреса сервера PostgreSQL (зазвичай localhost)
+	        'PORT': '',           # Порт для підключення (зазвичай залишається порожнім)
+	    }
+	}
 ```
 
 Замініть `'назва_бази_даних'`, `'користувач'`, та `'пароль'` на відповідні дані вашої бази даних PostgreSQL.

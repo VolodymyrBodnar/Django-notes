@@ -1,6 +1,7 @@
 
 Django REST Framework (DRF) - це бібліотека для створення веб-серверів API на базі Django. DRF спрощує створення RESTful API і надає ряд інструментів для цього. У цій нотатці ми розглянемо основні функції DRF та надамо приклади коду.
 
+Приклад проекту з лекції можна глянути тут: https://github.com/VolodymyrBodnar/DjangoExampleWarehouse
 ## Основні Функції DRF
 
 ### 1. Серіалізація Данних
@@ -55,7 +56,8 @@ DRF, як і джанго, має вбудовану підтримку авте
 ```python
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
+		'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',

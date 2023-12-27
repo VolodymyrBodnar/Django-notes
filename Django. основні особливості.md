@@ -10,3 +10,5 @@
 
 [[Структура проекту]]
 [[Django Cheat Sheet]]
+
+Приклад проекту з лекції можна глянути тут: https://github.com/VolodymyrBodnar/DjangoExampleWarehouse
